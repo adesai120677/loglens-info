@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LogLens is a private, locally operated dashboard for IIS log analysis, user insights and Gmail error-alert review.">
+  <title>LogLens — Application information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><a class="brand" href="./" aria-label="LogLens home"><span class="mark" aria-hidden="true">L</span>LogLens</a><nav aria-label="Main navigation"><a href="./" aria-current="page">About</a><a href="privacy.html">Privacy policy</a></nav></header>
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow">PRIVATE APPLICATION · PUBLIC INFORMATION</p>
+      <h1>A clearer view of<br>website activity.</h1>
+      <p class="intro">LogLens helps its operator understand web-server requests, investigate suspicious activity and review error-alert emails alongside the relevant logs.</p>
+      <p class="note">This is the information website for LogLens—not the dashboard. The application runs locally and is not offered for public registration.</p>
+      <a class="button" href="privacy.html">Read the privacy policy <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="section" aria-labelledby="purpose">
+      <p class="eyebrow">WHAT IT DOES</p><h2 id="purpose">From requests to useful context.</h2>
+      <div class="features">
+        <article><span class="number">01 / ANALYSE</span><h3>Attack Intelligence</h3><p>Import IIS logs, review client requests, investigate suspicious traffic and inspect verified crawler activity.</p></article>
+        <article><span class="number">02 / UNDERSTAND</span><h3>User Insights</h3><p>Explore website searches and estimated browsing journeys, with successful-order information from a read-only order API.</p></article>
+        <article><span class="number">03 / REVIEW</span><h3>Check Error Emails</h3><p>Compare IP addresses found in unread Gmail alert subjects with imported logs, then organise those messages according to the configured review rules.</p></article>
+      </div>
+    </section>
+    <section class="section split" aria-labelledby="gmail">
+      <div><p class="eyebrow">GMAIL CONNECTION</p><h2 id="gmail">Authorised access.<br>A specific purpose.</h2></div>
+      <div><p>The operator connects the designated Gmail account through Google's OAuth sign-in. LogLens requests <code>gmail.modify</code> permission to read message metadata and change labels, read status, stars and Trash status.</p><p>The email review runs when the operator clicks <strong>Check Error Emails</strong>. LogLens does not send Gmail messages or permanently delete them through the API. It does not request the Gmail account password.</p><p>Gmail data and credentials are not published on this site. See the <a href="privacy.html">privacy policy</a> for access, storage, retention and revocation details.</p></div>
+    </section>
+    <section class="contact"><h2>Questions about LogLens?</h2><p>Operated by Amit Desai. For application support or privacy questions, contact <a href="mailto:gtierrors@gmail.com">gtierrors@gmail.com</a>.</p></section>
+  </main>
+  <footer><span>LogLens · Private operational tool</span><a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
